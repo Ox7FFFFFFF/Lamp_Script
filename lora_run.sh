@@ -6,9 +6,6 @@ send_freq="${freq[$RANDOM%8]}"
 car=$1
 count=$2
 
-printf "%s\n" "${car}"
-printf "%s\n" "${count}"
-
 if [ $count -eq 15 ]; then
     python3 join_otaa_retry.py
     sleep 10
